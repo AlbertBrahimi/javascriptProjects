@@ -1,0 +1,33 @@
+.game{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+    height: 400px;
+    width: 400px;
+}
+.cells{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+@media (max-width: 600px) {
+  body{
+    margin: 0;
+    padding: 0;
+  }
+    .game{
+        height: 300px;
+        width: 300px;
+        position: fixed;
+    }
+    .cells{
+        font-size: 30px;
+    }
+}

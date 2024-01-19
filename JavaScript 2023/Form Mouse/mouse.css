@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  .form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border: 2px solid #95adc4;
+    border-radius: 5px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #98cbec;
+    border-radius: 3px;
+  }
+  .submit-btn {
+    width: 100px;
+    padding: 8px;
+    background-color: #3696c2;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    float: right; /* By default, place the button on the right */
+  }
+  .submit-btn.left {
+    float: left; /* Move the button to the left */
+  }

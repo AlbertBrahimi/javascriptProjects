@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+div{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    border: none;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    box-shadow: 1px 1px 40px 1px black;
+}
+button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1abc9c;
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #16a085;
+};

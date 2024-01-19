@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Detector</title>
+  </head>
+  <style>
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 20px 1px black;
+    }
+    input {
+      width: 300px;
+      height: 50px;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 10px;
+      border: 4px solid red;
+    }
+    input:focus {
+      border-color: green;
+    }
+    p {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Keyboard Detector</h1>
+      <input type="text" id="input" />
+      <p id="output"></p>
+    </div>
+  </body>
+  <script>
+    const input = document.getElementById("input");
+    const output = document.getElementById("output");
+
+    // Event listener function to handle the keydown event
+    function detector(e) {
+      // Get the pressed key from the event object
+      const keyName = e.key;
+      const outputMessage = keyName + " key is pressed";
+      output.style.color = "green";
+      output.innerText = outputMessage;
+    }
+    input.addEventListener("keydown", detector);
+  </script>
+</html>

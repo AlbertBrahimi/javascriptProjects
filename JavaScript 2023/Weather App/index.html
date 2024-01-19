@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cool Weather App</h1>
+    </header>
+    <main>
+      <div class="search-bar">
+        <input type="text" placeholder="Enter location" id="search-input" />
+        <button id="search-button">Search</button>
+      </div>
+      <p id="error"></p>
+      <div class="weather-display">
+        <div class="weather-info">
+          <h2 id="city">City Name</h2>
+          <p id="temp"></p>
+          <p id="condition">Condition: Sunny</p>
+          <p id="humidity">Humidity: 60%</p>
+        </div>
+        <img
+          src="sunny.png"
+          alt="Weather Icon"
+          class="weather-icon"
+          id="images"
+        />
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
